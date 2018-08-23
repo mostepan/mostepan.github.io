@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio</title>
+<link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="web/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<script type="text/javascript" src="web/js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+<!--icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+	<div class="header_bg" id="home"><!-- start header -->
+
+<div class="container">
+	<div class="row header text-center specials">
+	
+		<nav class="top-nav">
+			<ul class="top-nav nav_list">
+				<li><a href="#works">Works</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contacte">get in touch</a></li>
+			</ul>
+			<a href="#" id="pull"><img src="web/images/nav-icon.png" title="menu" /></a>
+		</nav>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+	<section id="intro">
+			<div class="intro-content">
+				<div class="row">
+					<div class="col-twelve">
+						<h1>Welcome</h1>
+						<h2>My name is Kate</h2>
+					</div>
+	   			</div>   		 		
+			</div>   
+   </section> <!-- /intro -->
+
+<div class="main_bg"  id="about"><!-- start about us -->
+<div class="container">
+	<div class="row about">
+		<div class="col-md-3 about_img">
+			<img src="web/images/user.jpg" alt="" class="responsive"/>
+		</div>
+		<div class=" about_text">
+			<h3>Kate Mostepan</h3>
+			<h4>FRONT - END / WEB - DEVELOPER</h4>
+		</div>
+		<div class="navbar-right">
+				<ul class="text-center">
+					<li><a href="https://www.instagram.com/katja_gilbert/"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com/kate.slavatinskaya"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="https://t.me/MostepanKate"><i class="fab fa-telegram-plane"></i></a></li>
+					<li><a href="https://github.com/KateMostepan"><i class="fab fa-github"></i></a></li>
+					
+				</ul>	
+		</div>
+	</div>
+</div>
+</div>
+<div class="heade_bg" id="works"><!-- start header -->
+<div class="container"><!-- start main -->
+	<div class="main row">
+ 	 	<h2 class="style">my works</h2>
+				<div class="col-md-3 images_1_of_4">
+					<div class="fancyDemo">
+						<img src="web/images/gladiolus.info.jpg" alt="" class="img-responsive"/>
+						<a href="http://www.gladiolus.info/ " target="_blank" class="demo link">Перейти</a>
+					</div>
+					 <h3>Online Store With WordPress</h3>
+					 
+				</div>
+				
+				
+				<div class="col-md-3 images_1_of_4">
+					<div class="fancyDemo">
+						<img src="web/images/nomeukraine.com.ua.jpg" alt=""class="img-responsive"/>
+						<a href="http://nomeukraine.com.ua/ " target="_blank" class="demo link">Перейти</a>
+					</div>
+					 <h3>Landing Page</h3>
+				</div>
+				
+				
+				<div class="col-md-3 images_1_of_4 ">
+					<div class="fancyDemo ">
+						<img src="web/images/wwdaw.com.ua.jpg" alt=""class="img-responsive"/>
+						
+						<a href="http://wwdaw.com.ua/" target="_blank" class="demo link">Перейти</a>
+					</div>
+					<h3>Landing Page</h3>
+				</div>
+				
+				
+				<div class="col-md-3 images_1_of_4 ">
+					<div class="fancyDemo ">
+						<img src="web/images/firework.jpg" alt=""class="img-responsive"/>
+						
+						<a href="web/works/fireworks/index.html" target="_blank" class="demo link">Перейти</a>
+					</div>
+					<h3>JavaScript</h3>
+				</div>
+				
+				
+				<div class="clear"></div>
+			
+	</div>
+</div>
+</div>
+<div class="footer_bg" id="contacte"><!-- start footer -->
+<div class="container">
+	<div class="row footer">
+		<div class="col-md-8 contact_left">
+			<h3>get in touch</h3>
+			<p>In order to get in touch use the contact form below:</h4>
+			<form method="post" action="contact-post.html">
+				<input type="text" value="Name (Required)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+				<input type="text" value="Email (Required)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+				<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+				<textarea onfocus="if(this.value == 'Your Message here....') this.value='';" onblur="if(this.value == '') this.value='Your Message here....;" >Your Message here....</textarea>
+				<span class="pull-right"><input type="submit" value="submit us"></span>
+			</form>
+		</div>
+		<div class="col-md-4  contact_right">
+			<ul class="list-unstyled address">
+				<li><i class="fa fa-map-marker"></i><a title="map" href="">Kyiv, Ukraine</a></li>
+				<li><i class="fa fa-phone"></i><a href="tel:+38(066)4613556">(066) 461-35-56</a></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:kate.mostepan@gmail.com">kate.mostepan@gmail.com</a></li>
+			</ul>
+		</div>		
+	</div>
+</div>
+</div>
+<div class="footer1_bg"><!-- start footer1 -->
+	<div class="container">
+		<div class="row footer">
+			<span>© KateMostepan 2018.</span>
+		</div>
+		<script type="text/javascript">
+				$(function() {
+				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+				});
+		</script>
+		<!---- start-smoth-scrolling---->		
+	</div>
+</div>
+</body>
+</html>
