@@ -2,32 +2,60 @@
      font-family: 'open_sansregular';
       src:url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
 }
-@media only screen and (max-width:1024px) {
-	html {
-		font-size: 9.375px;
-	}
-}
-@media only screen and (max-width:768px) {
-	html {
-		font-size: 10px;
-	}
-}
-@media only screen and (max-width:400px) {
-	html {
-		font-size: 9.375px;
-	}
-}
+
+
 body {
 	font-family: 'open_sansregular';
 	background:#ffffff;
 	font-size: 100%;
-	height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight:bold;
+	color: #252525;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 2.1rem;
+	font-size: 3.1rem;
+	line-height: 135%;
+	letter-spacing: -.1rem;
+}
+
+@media screen and (max-width:600px) {
+	h1, .h01 {
+		font-size: 2.6rem;
+		letter-spacing: -.07rem;
+	}
+}
+
+h2, .h02 {
+	font-size: 2.4rem;
+	line-height: 1.25;
+}
+h3, .h03 {
+	font-size: 2rem;
+	line-height: 1.5;
+}
+h4, .h04 {
+	font-size: 1.7rem;
+	line-height: 1.76;
+}
+h5, .h05 {
+	font-size: 1.4rem;
+	line-height: 1.7;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+}
+h6, .h06 {
+	font-size: 1.3rem;
+	line-height: 1.85;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
 }
 /* start header */
 .header_bg{
 	background: #323232;
 }
-
 /* top-nav */
 .top-nav:before,.top-nav:after {
     content: " ";
@@ -102,58 +130,7 @@ nav a#pull {
 	  	text-indent: 25px;
   	}
 }
-h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-	font-family: 'Times New Roman', Times, serif;
-	font-weight:bold;
-	color: #252525;
-	font-style: normal;
-	text-rendering: optimizeLegibility;
-	margin-bottom: 2.1rem;
-}
-h3, .h03, h4, .h04 {
-	margin-bottom: 1.8rem;
-}
-h5, .h05, h6, .h06 {
-	font-family: "raleway-heavy";
-	margin-bottom: 1.2rem;
-}
 
-h1, .h01 {
-	font-size: 3.1rem;
-	line-height: 1.35;
-	letter-spacing: -.1rem;
-}
-@media only screen and (max-width:600px) {
-	h1, .h01 {
-		font-size: 2.6rem;
-		letter-spacing: -.07rem;
-	}
-}
-
-h2, .h02 {
-	font-size: 2.4rem;
-	line-height: 1.25;
-}
-h3, .h03 {
-	font-size: 2rem;
-	line-height: 1.5;
-}
-h4, .h04 {
-	font-size: 1.7rem;
-	line-height: 1.76;
-}
-h5, .h05 {
-	font-size: 1.4rem;
-	line-height: 1.7;
-	text-transform: uppercase;
-	letter-spacing: .15rem;
-}
-h6, .h06 {
-	font-size: 1.3rem;
-	line-height: 1.85;
-	text-transform: uppercase;
-	letter-spacing: .15rem;
-}
 #intro {
 	background: #14181E url(../images/intro-bg.jpg) no-repeat center;
 	-webkit-background-size: cover;
@@ -198,6 +175,72 @@ h6, .h06 {
 	max-width: 830px;
 	margin-left: auto;
 	margin-right: auto;
+}
+@media only screen and (max-width:1024px) {
+	.intro-content {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+	.intro-content h1 {
+		font-size: 4.8rem;
+		max-width: 700px;
+	}
+	.intro-content h5 {
+		font-size: 1.6rem;
+	}
+	.intro-content .video-link a {
+		width: 72px;
+		height: 72px;
+		margin-bottom: 3rem;
+	}
+}
+@media only screen and (max-width:768px) {
+	#intro {
+		min-height: 660px;
+	}
+	.intro-content h1 {
+		font-size: 4.2rem;
+		max-width: 550px;
+	}
+	.intro-content h5 {
+		font-size: 1.5rem;
+		letter-spacing: .15rem;
+	}
+}
+@media only screen and (max-width:600px) {
+	#intro {
+		min-height: 600px;
+	}
+	.intro-content h1 {
+		font-size: 3.8rem;
+		margin-bottom: .9rem;
+	}
+	.intro-content h5 {
+		font-size: 1.4rem;
+		letter-spacing: .15rem;
+	}
+	.intro-content .video-link a {
+		width: 66px;
+		height: 66px;
+		margin-bottom: 1.5rem;
+	}
+}
+@media only screen and (max-width:400px) {
+	#intro {
+		min-height: 550px;
+	}
+	.intro-content h1 {
+		font-size: 3.4rem;
+	}
+	.intro-content h5 {
+		font-size: 1.4rem;
+		letter-spacing: .15rem;
+	}
+	.intro-content .video-link a {
+		width: 60px;
+		height: 60px;
+	}
 }
 .main row{
 	margin:10px 0 0;
@@ -1010,7 +1053,16 @@ h2.style{
 	.header_bg {
 
 	}
-	
+	.logo{
+		display: none;
+	}
+	.h_logo{
+		display: block;
+		position: absolute;
+		left: 45%;
+		top:15px;
+		z-index: 999;
+	}
 	.specials {
 		padding: 34px 10px;
 	}
@@ -1062,10 +1114,14 @@ h2.style{
 		top: 20px;
 		left: 20px;
 	}
-	
+	.h_logo {
+		left: 42.333%;
+	}
 }
 @media only screen and (max-width: 320px) {
-	
+	.h_logo {
+		left: 38.333%;
+	}
 	nav li {
 		display: block;
 		float: none;
